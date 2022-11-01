@@ -1,0 +1,101 @@
+@media (min-width: 576px) {
+    .container-fluid {
+        width: 92vw;
+    }
+}
+
+@media (max-width: 576px) {
+    #img-logo {
+        height: 38px;
+    }
+}
+
+.navbar {
+    background-color: #3d4c76;
+    height: 10vh;
+}
+
+.offcanvas{
+    background-color: #3d4c76;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-toggler {
+    background-color: white;
+    fill: #4a537c;
+    border: none;
+}
+
+.nav-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+    color: rgb(196, 196, 196);
+}
+
+/* @media (min-width: 576px) {
+    .header-nav {
+        width: 92vw;
+    }
+}
+
+.navbar-brand img {
+    height: 65px;
+}
+
+
+.navbar-collapse {
+    margin-top: 5px;
+    background-color: #3d4c76;
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+} */
+
+.header-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.5)) ,url(./assets/MainIMG.jpeg)no-repeat;
+    height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+/* #4a537c */
+
+.boton{
+    background-color:#4a537c;
+    border: 1px solid #4a537c;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 6px 15px;
+    
+}
+
+
+
+.boton:hover {
+    background-color: white;
+    border-color: #4a537c;
+    color: #4a537c;
+}
+h1{
+    color: white;
+}
+h2{
+    color: black;
+}
+
+    
