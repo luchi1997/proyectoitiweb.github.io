@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="homepage_style.css">
     <title>UTU ITI</title>
 </head>
@@ -23,14 +29,13 @@
         <nav class="navbar sticky-top navbar-expand-lg shadow-sm">
             <div class="container-fluid">
                 
-                <a href="homepage.html" class="navbar-brand justify-content-start">
+                <a href="index.html" class="navbar-brand justify-content-start">
                     <img src="./assets/logoiti.jpg" alt="logoiti">
                 </a>
-
                 <!-- Boton toggler -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                        <span class="navbar-toggler-icon"></span>
+                            </button>
     
                 <!-- Offcanvas -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
@@ -41,22 +46,30 @@
 
                     <div class="offcanvas-body justify-content-end">
                         <ul class="navbar-nav">
-                            <li class="nav-item me-3">
-                                <a class="nav-link ps-3" aria-current="page" href="#">Estudiantes</a>
-                            </li>
-                            <li class="nav-item me-3">
-                                <a class="nav-link ps-3" href="#">Biblioteca</a>
-                            </li>
+                        </li>
+                        <li class="nav-item me-3 dropdown">
+                            <a class="nav-link ps-3 dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Estudiantes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Programas</a></li>
+                                <li><a class="dropdown-item" href="#">Horarios</a></li>
+                                <li><a class="dropdown-item" href="#">Exámenes</a></li>
+                                <li><a class="dropdown-item" href="#">Avisos de inasistencias</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link ps-3" href="#">Biblioteca</a>
+                        </li>
                             <li class="nav-item me-3">
                                 <a class="nav-link ps-3" href="#">Novedades</a>
                             </li>
                             <li class="nav-item me-3 dropdown">
                                 <a class="nav-link ps-3 dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown">Menu desplegable</a>
+                                    data-bs-toggle="dropdown">Docentes</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">1</a></li>
-                                    <li><a class="dropdown-item" href="#">2</a></li>
-                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                    <li><a class="dropdown-item" href="#">Reuniones</a></li>
+                                    <li><a class="dropdown-item" href="#">Avisos</a></li>
+
                                 </ul>
                             </li>
                         </ul>
@@ -69,12 +82,85 @@
                 <div class="hero">
                     <div class="row d-flex flex-column justify-content-center align-items-center text-center">
                         <div class="col">
-                            <h1>INSTITUTO TECONOLÓGICO DE INFORMÁTICAAAAAAAA</h1>
+                            <h1>INSTITUTO TECONOLÓGICO DE INFORMÁTICA</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="gallery">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/Bienvenido.png" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bienvenidos</h5>
+                        <p>Este es el cartel de bienvenida hacia los estudiantes que cursan un nuevo año</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/Entrada.png" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Entrada Principal</h5>
+                        <p>Por acá a la derecha nos encontramos con administración y al frente está dirección</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/Pizarrón.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pizarrón de una de las clases más "importantes" de primer año</h5>
+                        <p>La materia es Taller (Laboratorio de soporte equipamiento informático)</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/Salon.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Esta es una presentación hecha por los mismos estudiantes de la materia Taller</h5>
+                        <p>En esta se encuantran los cables que se utilizan para conectar la computadora con...</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/AmeosTrabajando.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>HOLANDA</h5>
+                        <p>como se encuentra usted?</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/ServerOP.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>HOLANDA</h5>
+                        <p>como se encuentra usted?</p>
+                      </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="assets/entrada.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">UTU</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             
+            </div>
         <div class="container">
             <h2>¿Qué se hace en este instituto?</h2>
         </div>
@@ -83,13 +169,20 @@
     <main>
         <div class="container">
             <p>En el este instituto nos enseñan como formarnos para una empresa informática, a arreglar el hardware, a hacer redes, paginas web entre muchas</p>
-            <a class="boton" href="homepage.html">Ir a inicio</a>
+            <a class="boton" href="index.html">Ir a inicio</a>
         </div>
     </main>
-
+    <div>
     <footer>
-
+        <div class="lala">
+            <div class="card-footer bg-transparent border-success">©2022 Instituto Tecnológico de Informática
+                Durazno 1328 entre Ejido y Aquiles R. Lanza
+                Montevideo, Uruguay
+                Teléfono: 29012257 - Fax: 29027144 Interno 13
+                Diseño del alumno/s: Germán Sendic y Lucía Guigou</div>
+            </div>
     </footer>
+    </div>
     <script>
         function ajustarfooter() {
     var winH = $(window).height();
@@ -103,6 +196,8 @@
   $(document).ready(ajustarfooter);
   $(window).on("resize", ajustarfooter);
     </script>
+
+
 
 </body>
 
