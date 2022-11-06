@@ -79,23 +79,31 @@
     border: 1px solid #4a537c;
     text-decoration: none;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 6px 15px;
-    
 }
 
-
+.seccion-inscripcion{
+  background-color: #3d4c76;
+}
 
 .boton:hover {
     background-color: white;
     border-color: #4a537c;
     color: #4a537c;
 }
-h1{
-    color: white;
+.titulo{
+    color: rgb(173, 44, 44);
+}
+.subtitulo{
+  color: #4a537c;
 }
 h2{
     color: black;
+}
+
+.img-novedades{
+  width: 80px;
 }
 
 * {box-sizing:border-box}
